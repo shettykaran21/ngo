@@ -5,6 +5,7 @@ require('dotenv').config();
 
 const config = require('./config');
 const postRoutes = require('./routes/post');
+const paymentRoutes = require('./routes/payment');
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/post', postRoutes);
+app.use('/payment', paymentRoutes);
 
 app.use((error, req, res, next) => {
   const status = error.statusCode || 500;

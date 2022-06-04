@@ -1,24 +1,12 @@
-import { Box, Typography } from '@mui/material';
+import Payment from './components/payment';
 
 import './App.css';
-import PostForm from './components/post-form';
+import { Box } from '@mui/material';
 
 function App() {
   return (
-    <Box
-      sx={{
-        width: '50rem',
-        margin: '0 auto',
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh',
-        justifyContent: 'center',
-      }}
-    >
-      <Typography variant="h1" sx={{ fontSize: '2rem' }}>
-        Create a post
-      </Typography>
-      <PostForm />
+    <Box sx={{ width: '5rem', margin: '0 auto' }}>
+      <Payment />
     </Box>
   );
 }
